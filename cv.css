@@ -1,0 +1,50 @@
+
+.Information{
+    font-size: 15px;
+}
+
+.Information a{
+    color: white;
+    font-size: 15pt;
+}
+
+
+.CV{
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+    position: relative;
+}
+html{
+    background: rgb(63,82,251);
+    background: radial-gradient(circle, rgba(63,82,251,1) 0%, rgba(70,125,252,1) 100%); 
+}
+
+.Strengths ul li{
+    list-style: none;
+}
+
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    bottom: -200;
+    width: 100%;
+    height: 60px; /* Adjust height to match your footer */
+    color: #fff; /* Customize text color */
+    
+}
+
+.Back{
+    float: right;
+    margin-top: 80px;
+    margin-right: 10px ;
+}
+

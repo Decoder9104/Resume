@@ -1,0 +1,55 @@
+.Cover-Note{
+    color: white;
+}
+
+.Cover-Note > h1{
+    font-size: 15pt;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  border: 1px dotted #aaa;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  
+}
+
+.Cover-Note p{
+  font-size: 17px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, white, white);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+    
+}
+
+html{
+  background: rgb(63,82,251);
+  background: radial-gradient(circle, rgba(63,82,251,1) 0%, rgba(70,125,252,1) 100%); 
+}
+
+
+footer{
+    color: white;
+
+}
+
+.Back{
+  float: right;
+  margin-top: 120px;
+}
+
+.Back button{
+  font-size: 10pt;
+}
+
+
+/*font-size: 10pt;
+    padding: 5px;
+    margin: 0px;
+    border: 1px dotted #aaa;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;*/ 
+
