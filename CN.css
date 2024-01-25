@@ -1,15 +1,18 @@
 .Cover-Note{
+    display: flex;
+    flex-direction: column;
     color: white;
+    flex: 1;
 }
 
-.Cover-Note > h1{
-    font-size: 15pt;
+ h1{
+  font-size: 15pt;
   font-weight: 600;
-  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  background-image: linear-gradient(to left, #5e2ce8, #7418cf);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  border: 1px dotted #aaa;
+  border: 1px dotted #aaa;  
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   
@@ -30,19 +33,39 @@ html{
   background: radial-gradient(circle, rgba(63,82,251,1) 0%, rgba(70,125,252,1) 100%); 
 }
 
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
-footer{
-    color: white;
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure at least viewport height */
+  margin: 0;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #333; /* Customize as needed */
+  color: #fff; /* Customize text color */
+}
+
+footer h2{
+  margin: 0px;
+  padding: 0px;
 }
 
 .Back{
-  float: right;
-  margin-top: 120px;
+  margin-left: auto;
 }
 
 .Back button{
   font-size: 10pt;
+ 
 }
 
 

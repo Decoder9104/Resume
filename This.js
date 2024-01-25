@@ -1,31 +1,13 @@
 $(function () {
-
-    This(".Welcome");
-    That(".Cover-Note")
-
-   function This(type){
-        var $The = $(type)
-        $($The).on("click","a", function(e) {
+   function directtopage(page){
+        return function (e){ 
             e.preventDefault();
-            window.location.href = 'cv.html';
-            
-
-        });
+            window.location.href = page;
+        }
    }
 
-   function That(type){
-    var $The = $(type)
-    $($The).on("click","a", function(e) {
-        e.preventDefault();
-        window.location.href = 'CN.html';
-        
-
-    });
-    }
-
-
-
-   
+    $(".c-v").click(directtopage('cv.html'));
+    $(".cover-note").click(directtopage('CN.html'));
 });
 
 
