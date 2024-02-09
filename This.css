@@ -13,62 +13,45 @@ html{
     background: radial-gradient(circle, rgba(63,82,251,1) 0%, rgba(70,125,252,1) 100%); 
 }
 
-
-.Welcome h2{
-    font-size: 25pt;
-    color: white;
-}
-
-.Welcome a{
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: white;
-    background-color: #1c5b84;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    border: 2px solid #3498db;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; display: inline-block;
-}   
-
-.Welcome a:hover{
-  background-color: #2980b9;
-  border-color: #2980b9;
-  color: white;
+.Welcome{
+    display: grid;
+    gap: 5rem;
     
 }
-.Welcome{
-    margin-left: 5px;
-}
 
-.Cover-Note h2{
-    font-size: 25pt;
-    color: white;
-}
 
-.Cover-Note a{
+.this{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+}
+.this button{
     display: inline-block;
     padding: 10px 20px;
-    text-decoration: none;
-    color: white;
     background-color: #1c5b84;
     border-radius: 5px;
     font-family: Arial, sans-serif;
     font-size: 15px;
     border: 2px solid #3498db;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; display: inline-block;
-}
+}   
 
-.Cover-Note a:hover{
-    background-color: #2980b9;
-    border-color: #2980b9;
+.this a{
+    text-decoration: none;
     color: white;
+    
 }
 
-.Cover-Note{
-    margin-top: 10px;
-    margin-left: 5px;
+.this a:hover{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; display: inline-block;
 }
 
 
