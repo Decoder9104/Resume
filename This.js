@@ -2,12 +2,13 @@ $(function () {
     function directtopage(page){
          return function (e){ 
              e.preventDefault();
+             e.stopPropagation();
              window.location.href = page;
          }
     }
  
-     $(".CV").click(directtopage('cv.html'));
-     $(".CN").click(directtopage('CN.html'));
+     $(".CV a").click(directtopage('cv.html'));
+     $(".CN a").click(directtopage('CN.html'));
  });
 
 
