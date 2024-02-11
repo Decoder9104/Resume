@@ -1,45 +1,94 @@
-header h1{
-    font-size: 50pt;
-    color: white;
-    margin-top: 150px;
-    border-top: 2px solid black;
+.theHeader{
+    margin-top: 10px;
     background: rgb(0,6,164);
     background: linear-gradient(90deg, rgba(0,6,164,1) 63%, rgba(1,15,13,0.7814775568430498) 100%);
-  
+}
+.theHeader h1{
+    font-size: 25pt;
+    color: white;
+    position: relative;
+    width: max-content; 
+    animation: float-header 7s linear infinite;
 }
 
-html{
-    background: rgb(63,82,251);
-    background: radial-gradient(circle, rgba(63,82,251,1) 0%, rgba(70,125,252,1) 100%); 
+header li{
+    font-size: large;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
+
+header ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+@keyframes float-header {
+    0% {
+      transform: translateX(-50%);  
+    }
+    100% { 
+      transform: translateX(950%);
+    }
+  }
+
+html{
+    overflow-x: hidden; /*Hides the bottom scroller*/
+    overflow-y: hidden;
+    background: url('cool-background\ \(2\).png') no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 
 .Welcome{
     display: grid;
-    gap: 5rem;
-    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
+.dw{
+    grid-column: span 2;
+    padding: 234px;
 
+}
 .this{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px;
+    padding: 100px;
+    perspective: 1000px;
 }
 .this button{
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #1c5b84;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    border: 2px solid #3498db;
-    padding: 100px 200px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(to right,#110e0d,#e9e6e1); /*right -> red, orange -> left*/
+    color: white;
+    font-size: 18px;
+    transition: transform 0.2s;  
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }   
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}  
+  
 
 .this a{
     text-decoration: none;
-    color: white;
+    color: inherit;
+    font-size: 50px;
     
 }
 
@@ -50,11 +99,19 @@ html{
     background-color: white;
     border-radius: 5px;
     font-family: Arial, sans-serif;
-    font-size: 15px;
+    font-size: 50px;
     border: 2px solid #3498db;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; display: inline-block;
 }
 
+button::before{
+    content:"📑"; 
+    margin-right: 10px;
+}
+
+.CN button::before {
+    content: "📨"; 
+ }
 
 html, body{
     margin: 0;
@@ -62,18 +119,17 @@ html, body{
     height: 100%;
 }
 
-header{
-    margin-bottom: 60px;
-}
+
 
 footer{
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 60px; /* Adjust height to match your footer */
-  background-color: #333; /* Customize as needed */
-  color: #fff; /* Customize text color */
+  height: 35px; 
+  background-color: #333; 
+  color: #fff; 
+  text-align: center;
 }
 
 

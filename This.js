@@ -1,3 +1,4 @@
+
 $(function () {
     function directtopage(page){
          return function (e){ 
@@ -11,4 +12,4 @@ $(function () {
      $(".CN a").click(directtopage('CN.html'));
  });
 
-
+ 
